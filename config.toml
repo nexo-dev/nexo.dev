@@ -1,0 +1,33 @@
+baseurl = "/"
+languageCode = "en-us"
+#title = "Mikhail Kochegarov, software architect / developer"
+theme = "hugo-classic"
+googleAnalytics = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+enableEmoji = true
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+
+#[[menu.main]]
+#    name = "Home"
+#    url = "/"
+#    weight = 1
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+[[menu.feed]]
+    name = "Subscribe"
+    url = "/index.xml"
+
+[params]
+    description = "Mikhail Kochegarov's personal blog"
+    footer = "[Github](https://github.com/nexo.dev)"
+    custom_css = ["css/theme-override.css"]
